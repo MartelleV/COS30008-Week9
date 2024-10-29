@@ -18,9 +18,9 @@
 ```cpp
 #include <iostream>
 
-static int staticVar = 10; // Static variable
+static int staticVar = 25; // Static variable
 
-const int constVar = 20; // Constant variable
+const int constVar = 30; // Constant variable
 
 void displayMemory() {
     int localVar = 30; // Local variable
