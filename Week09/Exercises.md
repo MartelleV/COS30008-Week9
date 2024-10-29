@@ -49,11 +49,17 @@ int main() {
 
 ### Questions:
 - What happens if you uncomment the line attempting to modify `constVar`?
+
 If I uncomment the line constVar = 25;, the code will fail to compile. This is because constVar is declared as a constant using the const keyword, meaning its value cannot be changed after initialization. The compiler will produce an error indicating that you cannot modify a constant variable.
+
 - Why is it important to manage heap memory using `delete`?
+
 It is important to manage heap memory using delete to prevent memory leaks. When memory is allocated on the heap using new, it remains allocated until it is explicitly deallocated using delete. If you do not free the memory, it will remain allocated even after the program no longer needs it, which can lead to increased memory usage and eventually exhaust the available memory, causing the program to crash or behave unpredictably.
+
 - How does the scope of `localVar` affect its accessibility?
+
 The scope of localVar is limited to the displayMemory function. This means that localVar cannot be accessed outside of this function. Once the function execution completes, localVar is destroyed, and any attempt to access it outside that function will result in an error. Local variables have automatic storage duration, meaning they are created when the function is called and destroyed when the function exits.
+
 ---
 
 ### Exercise 2: Implementing Reference Counting
